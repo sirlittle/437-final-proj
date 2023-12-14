@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Price Display</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .full-screen {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: green;
+            color: white;
+            font-size: 5em;
+            text-align: center;
+            line-height: 100vh; /* Vertically center the text */
+        }
+    </style>
+</head>
+<body>
+    <div id="bitcoinPrice" class="full-screen"></div>
+    <div id="ethereumPrice" class="full-screen"></div>
+</body>
+<script src="app.js"></script>
+</html>
